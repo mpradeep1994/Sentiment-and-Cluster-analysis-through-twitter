@@ -1,7 +1,7 @@
-To do a more open-ended exploration of online social networking. 
+ Developed an application in python where given the hashtags that are trending in twitter, it identifies the users who has used those hashtags and builds a graph between them. Using Girvan Newman cluster analysis algorithm, clusters among them are identified.
+ Tweets that are collected are classified using Machine learning models like Support Vector Machine, naïve based and logistic regression for predicting the sentiment of the tweets.
+ Computed average testing accuracy for each model over k-fold of Cross validation and accuracy comparison analysis is made and documented.
 
-:
-```
 python collect.py
 python cluster.py
 python classify.py
