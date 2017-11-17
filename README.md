@@ -38,12 +38,12 @@ It is based on the data collected from the Twitter based on the NBA teams and it
 
 ```
 •	My source of data will be from twitter. 
-•	We can collect data using thier API which provides data with many restriction, usually we will be able to get only data 		which are pusblished within 15 days. 
+•	We can collect data using thier API which provides data with many restriction, usually we will be able to get only data which are pusblished within 15 days. 
 •	For making my dataset unique I need to collect the data in regular interval during game season. 
-•	Each tweet has a id, each time I run my collect.py I store the recent Tweet ID and later when I re-run my code i will be 		able to get the unqiue tweets. 
+•	Each tweet has a id, each time I run my collect.py I store the recent Tweet ID and later when I re-run my code i will be able to get the unqiue tweets. 
 •	I am collecting tweets for each hashtag and storing the tweets in of each hashtag in a pickle file with the name as hastag.
 	example: ubNation.pkl
-			 WeTheNorth'.pkl
+		WeTheNorth'.pkl
 
 ```
 
@@ -68,22 +68,22 @@ It is based on the data collected from the Twitter based on the NBA teams and it
 ```
 	Mutual number of followers for the team #thunderup #WeTheNorth		 ----> 6
 	Mutual number of followers for the team #thunderup #DefendTheLand 	 ----> 9
-	Mutual number of followers for the team #thunderup #DetroitBasketball----> 12
+	Mutual number of followers for the team #thunderup #DetroitBasketball    ----> 12
 	Mutual number of followers for the team #thunderup #GrindCity 		 ----> 9
 	Mutual number of followers for the team #thunderup #LakeShow 		 ----> 5
 	Mutual number of followers for the team #thunderup #DubNation 		 ----> 7
 	Mutual number of followers for the team #WeTheNorth #DefendTheLand 	 ----> 6
-	Mutual number of followers for the team #WeTheNorth #DetroitBasketball----> 11
+	Mutual number of followers for the team #WeTheNorth #DetroitBasketball   ----> 11
 	Mutual number of followers for the team #WeTheNorth #GrindCity 		 ----> 16
 	Mutual number of followers for the team #WeTheNorth #LakeShow		 ----> 3
 	Mutual number of followers for the team #WeTheNorth #DubNation     	 ----> 14
-	Mutual number of followers for the team #DefendTheLand #DetroitBasketball ----> 24
-	Mutual number of followers for the team #DefendTheLand #GrindCity    ----> 8
+	Mutual number of followers for the team #DefendTheLand #DetroitBasketball----> 24
+	Mutual number of followers for the team #DefendTheLand #GrindCity        ----> 8
 	Mutual number of followers for the team #DefendTheLand #LakeShow 	 ----> 3
 	Mutual number of followers for the team #DefendTheLand #DubNation 	 ----> 7
-	Mutual number of followers for the team #DetroitBasketball #GrindCity----> 15
-	Mutual number of followers for the team #DetroitBasketball #LakeShow ----> 11
-	Mutual number of followers for the team #DetroitBasketball #DubNation----> 15
+	Mutual number of followers for the team #DetroitBasketball #GrindCity    ----> 15
+	Mutual number of followers for the team #DetroitBasketball #LakeShow     ----> 11
+	Mutual number of followers for the team #DetroitBasketball #DubNation    ----> 15
 	Mutual number of followers for the team #GrindCity #LakeShow 		 ----> 4
 	Mutual number of followers for the team #GrindCity #DubNation 		 ----> 7
 	Mutual number of followers for the team #LakeShow #DubNation  		 ----> 7
@@ -99,15 +99,15 @@ Cluster Information stored in file Cluster.pkl
 ```
 
 ### BEFORE CLUSTURING
-![image](https://github.com/mpradeep1994/Sentiment-and-Cluster-analysis-through-twitter/blob/master/cluster%20images/before_clusture.png"Optional title")
+![image](https://github.com/mpradeep1994/Sentiment-and-Cluster-analysis-through-twitter/blob/master/cluster%20images/before_clusture.png "Optional title")
 ### AFTER CLUSTURING - 1
-![image](https://github.com/mpradeep1994/Sentiment-and-Cluster-analysis-through-twitter/blob/master/cluster%20images/Cluster1.png"Optional title")
+![image](https://github.com/mpradeep1994/Sentiment-and-Cluster-analysis-through-twitter/blob/master/cluster%20images/Cluster1.png "Optional title")
 ### AFTER CLUSTURING - 2
-![image](https://github.com/mpradeep1994/Sentiment-and-Cluster-analysis-through-twitter/blob/master/cluster%20images/Cluster2.png"Optional title")
+![image](https://github.com/mpradeep1994/Sentiment-and-Cluster-analysis-through-twitter/blob/master/cluster%20images/Cluster2.png "Optional title")
 ### AFTER CLUSTURING - 3
-![image](https://github.com/mpradeep1994/Sentiment-and-Cluster-analysis-through-twitter/blob/master/cluster%20images/Cluster3.png"Optional title")
+![image](https://github.com/mpradeep1994/Sentiment-and-Cluster-analysis-through-twitter/blob/master/cluster%20images/Cluster3.png "Optional title")
 ### AFTER CLUSTURING - 4
-![image](https://github.com/mpradeep1994/Sentiment-and-Cluster-analysis-through-twitter/blob/master/cluster%20images/Cluster4.png"Optional title")
+![image](https://github.com/mpradeep1994/Sentiment-and-Cluster-analysis-through-twitter/blob/master/cluster%20images/Cluster4.png "Optional title")
 
 
 # 3. classify.py
