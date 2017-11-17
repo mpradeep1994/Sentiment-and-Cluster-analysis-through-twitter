@@ -25,13 +25,13 @@ It is based on the data collected from the Twitter based on the NBA teams and it
 
 
 ```
---> '#DubNation'
---> '#WeTheNorth'
---> '#GrindCity'
---> '#DetroitBasketball'
---> '#thunderup'
---> '#LakeShow'
---> '#DefendTheLand'
+• '#DubNation'
+• '#WeTheNorth'
+• '#GrindCity'
+• '#DetroitBasketball'
+• '#thunderup'
+• '#LakeShow'
+• '#DefendTheLand'
 ```
 
 # 1.1 Collecting unique data 
@@ -63,42 +63,111 @@ It is based on the data collected from the Twitter based on the NBA teams and it
 •	All the teets and cluster information is stored in a file Cluster.pkl
 ```
 
-# 2.1 OUTPUT FOR CLUSTER
+# 2.1 OUTPUT FOR WHILE CLUSTER
+
 ```
-Mutual number of followers for the team #thunderup #WeTheNorth ----> 6
-Mutual number of followers for the team #thunderup #DefendTheLand ----> 9
-Mutual number of followers for the team #thunderup #DetroitBasketball ----> 12
-Mutual number of followers for the team #thunderup #GrindCity ----> 9
-Mutual number of followers for the team #thunderup #LakeShow ----> 5
-Mutual number of followers for the team #thunderup #DubNation ----> 7
-Mutual number of followers for the team #WeTheNorth #DefendTheLand ----> 6
-Mutual number of followers for the team #WeTheNorth #DetroitBasketball ----> 11
-Mutual number of followers for the team #WeTheNorth #GrindCity ----> 16
-Mutual number of followers for the team #WeTheNorth #LakeShow ----> 3
-Mutual number of followers for the team #WeTheNorth #DubNation ----> 14
-Mutual number of followers for the team #DefendTheLand #DetroitBasketball ----> 24
-Mutual number of followers for the team #DefendTheLand #GrindCity ----> 8
-Mutual number of followers for the team #DefendTheLand #LakeShow ----> 3
-Mutual number of followers for the team #DefendTheLand #DubNation ----> 7
-Mutual number of followers for the team #DetroitBasketball #GrindCity ----> 15
-Mutual number of followers for the team #DetroitBasketball #LakeShow ----> 11
-Mutual number of followers for the team #DetroitBasketball #DubNation ----> 15
-Mutual number of followers for the team #GrindCity #LakeShow ----> 4
-Mutual number of followers for the team #GrindCity #DubNation ----> 7
-Mutual number of followers for the team #LakeShow #DubNation ----> 7
+	Mutual number of followers for the team #thunderup #WeTheNorth		 ----> 6
+	Mutual number of followers for the team #thunderup #DefendTheLand 	 ----> 9
+	Mutual number of followers for the team #thunderup #DetroitBasketball----> 12
+	Mutual number of followers for the team #thunderup #GrindCity 		 ----> 9
+	Mutual number of followers for the team #thunderup #LakeShow 		 ----> 5
+	Mutual number of followers for the team #thunderup #DubNation 		 ----> 7
+	Mutual number of followers for the team #WeTheNorth #DefendTheLand 	 ----> 6
+	Mutual number of followers for the team #WeTheNorth #DetroitBasketball----> 11
+	Mutual number of followers for the team #WeTheNorth #GrindCity 		 ----> 16
+	Mutual number of followers for the team #WeTheNorth #LakeShow		 ----> 3
+	Mutual number of followers for the team #WeTheNorth #DubNation     	 ----> 14
+	Mutual number of followers for the team #DefendTheLand #DetroitBasketball ----> 24
+	Mutual number of followers for the team #DefendTheLand #GrindCity    ----> 8
+	Mutual number of followers for the team #DefendTheLand #LakeShow 	 ----> 3
+	Mutual number of followers for the team #DefendTheLand #DubNation 	 ----> 7
+	Mutual number of followers for the team #DetroitBasketball #GrindCity----> 15
+	Mutual number of followers for the team #DetroitBasketball #LakeShow ----> 11
+	Mutual number of followers for the team #DetroitBasketball #DubNation----> 15
+	Mutual number of followers for the team #GrindCity #LakeShow 		 ----> 4
+	Mutual number of followers for the team #GrindCity #DubNation 		 ----> 7
+	Mutual number of followers for the team #LakeShow #DubNation  		 ----> 7
 
-graph has 109 nodes and 240 edges
+Graph has 109 nodes and 240 edges:
 
-cluster 1  Number of nodes/followers 18
-cluster 2  Number of nodes/followers 20
-cluster 3  Number of nodes/followers 20
-cluster 4  Number of nodes/followers 19
+	Cluster 1  Number of nodes/followers: 18
+	Cluster 2  Number of nodes/followers: 20
+	Cluster 3  Number of nodes/followers: 20
+	Cluster 4  Number of nodes/followers: 19
 
 Cluster Information stored in file Cluster.pkl 
 ```
 
- Computed average testing accuracy for each model over k-fold of Cross validation and accuracy comparison analysis is made and documented.
+### BEFORE CLUSTURING
+![image](https://github.com/mpradeep1994/Sentiment-and-Cluster-analysis-through-twitter/blob/master/cluster%20images/before_clusture.png"Optional title")
+### AFTER CLUSTURING - 1
+![image](https://github.com/mpradeep1994/Sentiment-and-Cluster-analysis-through-twitter/blob/master/cluster%20images/Cluster1.png"Optional title")
+### AFTER CLUSTURING - 2
+![image](https://github.com/mpradeep1994/Sentiment-and-Cluster-analysis-through-twitter/blob/master/cluster%20images/Cluster2.png"Optional title")
+### AFTER CLUSTURING - 3
+![image](https://github.com/mpradeep1994/Sentiment-and-Cluster-analysis-through-twitter/blob/master/cluster%20images/Cluster3.png"Optional title")
+### AFTER CLUSTURING - 4
+![image](https://github.com/mpradeep1994/Sentiment-and-Cluster-analysis-through-twitter/blob/master/cluster%20images/Cluster4.png"Optional title")
 
 
- algorithms in scikit-learn, networkx, scipy, numpy, nltk to perform your analysis. You do not need to implement the methods from scratch.
- It is expected that when I run your `collect.py` script, I may get different data than you collected when you tested your code. While the final results of the analysis may differ, your scripts should still work on new datasets.
+# 3. classify.py
+
+```
+•	It makes use of the data piped out of previous process and out of which a sample of tweets is labled manually by reading the tweets and identified as positive or negative tweet, which is then used as the training dataset to train the models which predicts the output lable for the test or any future data.
+
+•	We have files with same name as the hashtag in data lake folder which has tweets corresponding to each team. once the tweets are read and fit into the model. The predicted lable is attached to the CSV file and placed inside the data lake. 
+
+•	Computed average testing accuracy for each model over k-fold of Cross validation  and accuracy comparison analysis 		is made and documented.
+```
+### files having tweets and its label (Sentiment)
+```
+	DubNation.csv
+	WeTheNorth'.csv
+	GrindCity.csv
+	DetroitBasketball.csv
+	thunderup.csv
+	LakeShow.csv
+	DefendTheLand.csv
+
+output:
+	Accuracy for Logistic Regression=84.4 %
+	Accuracy for SVM =85.50 %
+	Accuracy for Decision Tree =89.65 %
+
+Logistic Regression Results for team #WeTheNorth
+	 Number of (-Ve Tweets) aganist team          87
+	 Number of (+Ve Tweets) supporting team       1259
+Logistic Regression Results for team #GrindCity
+	 Number of (-Ve Tweets) aganist team 		  800
+	 Number of (+Ve Tweets) supporting team	      1637
+Logistic Regression Results for team #DubNation
+	 Number of (-Ve Tweets) aganist team 		  836
+	 Number of (+Ve Tweets) supporting team	      2907
+Logistic Regression Results for team #DefendTheLand
+	 Number of (-Ve Tweets) aganist team 		  1288
+	 Number of (+Ve Tweets) supporting team		  3684
+Logistic Regression Results for team #DetroitBasketball
+	 Number of (-Ve Tweets) aganist team 		  1304
+	 Number of (+Ve Tweets) supporting team       3895
+Logistic Regression Results for team #thunderup
+	 Number of (-Ve Tweets) aganist team 		  3079
+	 Number of (+Ve Tweets) supporting team		  4358
+Logistic Regression Results for team #LakeShow
+	 Number of (-Ve Tweets) aganist team 		  3669
+	 Number of (+Ve Tweets) supporting team 	  4617
+
+```
+ 
+# 4. summerize.py
+
+Information from other process is gathered and printed as result file
+
+### Insight from the analysis:
+```
+•	Dubnation is a team which has minimum negative tweets Which means that the team and the team where really doing well for the season.
+•	lakeshow has equal number of positive and negative tweets which makes the team to have equal number of followers and haters.
+•	Like based on the count from the above result we can make conclusions from it. 
+
+PROBLEM: since my train data has tweets mostly from the Dubnation team, the prediction for other teams 
+was influenzed by the tweets of that team which made the count of negative tweets for other teams to go far high.
+```
