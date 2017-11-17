@@ -91,28 +91,32 @@ LakeShow.csv
 DefendTheLand.csv
 
 output of the file:
-Average cross validation accuracy for Logistic Regression=84.4 percentage
+Accuracy for Logistic Regression=84.4 percentage
+Accuracy for SVM =86.5 percentage
+Accuracy for Decision Tree Regression=86.5 percentage
+
 Logistic Regression Results for team #WeTheNorth
-	 Tweets aganist team				 87
-	 Number of Tweets supporting team 		1259
+	 Number of (-Ve Tweets) aganist team          87
+	 Number of (+Ve Tweets) supporting team       1259
 Logistic Regression Results for team #GrindCity
-	 Tweets aganist team				 800
-	 Number of Tweets supporting team 		1637
+	 Number of (-Ve Tweets) aganist team 		  800
+	 Number of (+Ve Tweets) supporting team	      1637
 Logistic Regression Results for team #DubNation
-	 Tweets aganist team				 836
-	 Number of Tweets supporting team 		2907
+	 Number of (-Ve Tweets) aganist team 		  836
+	 Number of (+Ve Tweets) supporting team	      2907
 Logistic Regression Results for team #DefendTheLand
-	 Tweets aganist team				 1288
-	 Number of Tweets supporting team 		3684
+	 Number of (-Ve Tweets) aganist team 		  1288
+	 Number of (+Ve Tweets) supporting team		  3684
 Logistic Regression Results for team #DetroitBasketball
-	 Tweets aganist team				 1304
-	 Number of Tweets supporting team 		3895
+	 Number of (-Ve Tweets) aganist team 		  1304
+	 Number of (+Ve Tweets) supporting team       3895
 Logistic Regression Results for team #thunderup
-	 Tweets aganist team				 3079
-	 Number of Tweets supporting team 		4358
+	 Number of (-Ve Tweets) aganist team 		  3079
+	 Number of (+Ve Tweets) supporting team		  4358
 Logistic Regression Results for team #LakeShow
-	 Tweets aganist team				 3669
-	 Number of Tweets supporting team 		4617
+	 Number of (-Ve Tweets) aganist team 		  3669
+	 Number of (+Ve Tweets) supporting team 	  4617
+
 
 
 4. summerize.py
