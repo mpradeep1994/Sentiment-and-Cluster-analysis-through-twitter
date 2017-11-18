@@ -1,20 +1,28 @@
 # SENTIMENT AND CLUSTER ANALYSIS THROUGH TWITTER API	
 
 ```
-Developed an application in python where given the hashtags that are trending in twitter, it identifies the users who has used those hashtags and builds a graph between them. Using Girvan Newman cluster analysis algorithm, clusters among them are identified. Tweets that are collected are classified using Machine learning models like Support Vector Machine, naïve based and logistic regression for predicting the sentiment of the tweets and accuracy comparision is made.
+Developed an application in python where given the hashtags that are trending in twitter, it identifies the users who has used 
+those hashtags and builds a graph between them. 
+Using Girvan Newman cluster analysis algorithm, clusters among them are identified. 
+Tweets that are collected are classified using Machine learning models like Support Vector Machine, naïve based and logistic regression
+for predicting the sentiment of the tweets and accuracy comparision is made.
 ```
 
 ### PYTHON FILES AND ITS ACTIONS
 
 ```
 
- `collect.py`: It is used to collect data whihc is used for analysis. Running this script will create a file or files containing the data that is need for the subsequent phases of analysis.
+ `collect.py`: It is used to collect data whihc is used for analysis. Running this script will create a file or files containing the
+ data that is need for the subsequent phases of analysis.
 
- `cluster.py`:  It is used to read the data collected in the previous file and using  community detection algorithm to cluster users into communities. 
+ `cluster.py`:  It is used to read the data collected in the previous file and using  community detection algorithm to cluster users
+ into communities. 
 
- `classify.py`:  It is used to classify data along any dimension of your choosing (e.g., sentiment, gender, spam, etc.). You may write any files you need to save the results.
+ `classify.py`:  It is used to classify data along any dimension of your choosing (e.g., sentiment, gender, spam, etc.). You may write
+ any files you need to save the results.
 
- `summarize.py`:  It is used to read the output of the previous methods to write a textfile called `summary.txt` containing the following entries:
+ `summarize.py`:  It is used to read the output of the previous methods to write a textfile called `summary.txt` containing the
+ following entries:
 
 ```
 
@@ -38,9 +46,11 @@ It is based on the data collected from the Twitter based on the NBA teams and it
 
 ```
 •	My source of data will be from twitter. 
-•	We can collect data using thier API which provides data with many restriction, usually we will be able to get only data which are pusblished within 15 days. 
+•	We can collect data using thier API which provides data with many restriction, usually we will be able to get only data which 
+are pusblished within 15 days. 
 •	For making my dataset unique I need to collect the data in regular interval during game season. 
-•	Each tweet has a id, each time I run my collect.py I store the recent Tweet ID and later when I re-run my code i will be able to get the unqiue tweets. 
+•	Each tweet has a id, each time I run my collect.py I store the recent Tweet ID and later when I re-run my code i will be able to 
+get the unqiue tweets. 
 •	I am collecting tweets for each hashtag and storing the tweets in of each hashtag in a pickle file with the name as hastag.
 	example: ubNation.pkl
 		WeTheNorth'.pkl
@@ -57,7 +67,9 @@ It is based on the data collected from the Twitter based on the NBA teams and it
 # 2. cluster.py
 
 ```
-•	In this process I pass my previously collected data from collect to do the cluster process. To make the clustering more 		sensible I choose only users who have focused and tweeted about atleast more than one team to identify clusters among them 		and made a graph for them.
+•	In this process I pass my previously collected data from collect to do the cluster process. To make the clustering more 	
+	sensible I choose only users who have focused and tweeted about atleast more than one team to identify clusters among them 	
+	and made a graph for them.
 •	I removed all user who follows or tweeted only for a single team.
 •	Later the graph is sent to grivan newman to identify cluster.
 •	All the teets and cluster information is stored in a file Cluster.pkl
@@ -113,11 +125,15 @@ Cluster Information stored in file Cluster.pkl
 # 3. classify.py
 
 ```
-•	It makes use of the data piped out of previous process and out of which a sample of tweets is labled manually by reading the tweets and identified as positive or negative tweet, which is then used as the training dataset to train the models which predicts the output lable for the test or any future data.
+•	It makes use of the data piped out of previous process and out of which a sample of tweets is labled manually by reading the 
+tweets and identified as positive or negative tweet, which is then used as the training dataset to train the models which predicts the 
+output lable for the test or any future data.
 
-•	We have files with same name as the hashtag in data lake folder which has tweets corresponding to each team. once the tweets are read and fit into the model. The predicted lable is attached to the CSV file and placed inside the data lake. 
+•	We have files with same name as the hashtag in data lake folder which has tweets corresponding to each team. once the tweets are 
+read and fit into the model. The predicted lable is attached to the CSV file and placed inside the data lake. 
 
-•	Computed average testing accuracy for each model over k-fold of Cross validation  and accuracy comparison analysis 		is made and documented.
+•	Computed average testing accuracy for each model over k-fold of Cross validation  and accuracy comparison analysis 		
+is made and documented.
 ```
 ### files having tweets and its label (Sentiment)
 ```
