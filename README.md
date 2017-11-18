@@ -2,8 +2,7 @@
 
 ```
 Developed an application in python where given the hashtags that are trending in twitter, it identifies the users who has used 
-those hashtags and builds a graph between them. 
-Using Girvan Newman cluster analysis algorithm, clusters among them are identified. 
+those hashtags and builds a graph between them. Using Girvan Newman cluster analysis algorithm, clusters among them are identified. 
 Tweets that are collected are classified using Machine learning models like Support Vector Machine, naïve based and logistic regression
 for predicting the sentiment of the tweets and accuracy comparision is made.
 ```
